@@ -111,8 +111,8 @@ class TestDBHelper():
     
 if __name__=="__main__":
     testDBHelper=TestDBHelper()
-    testDBHelper.testCreateDatebase()  #执行测试创建数据库
-    testDBHelper.testCreateTable()     #执行测试创建表
+    #testDBHelper.testCreateDatebase()  #执行测试创建数据库
+    #testDBHelper.testCreateTable()     #执行测试创建表
     #testDBHelper.testInsert()          #执行测试插入数据
     #testDBHelper.testUpdate()          #执行测试更新数据
     #testDBHelper.testDelete()          #执行测试删除数据
