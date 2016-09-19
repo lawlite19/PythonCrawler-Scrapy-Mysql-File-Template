@@ -67,7 +67,7 @@ class WebcrawlerScrapyPipeline(object):
     #写入数据库中
     def _conditional_insert(self,tx,item):
         #print item['name']
-        sql="insert into testpictures(name,url) values(%s,%s)"
+        sql="insert into testtable(name,url) values(%s,%s)"
         params=(item["name"],item["url"])
         tx.execute(sql,params)
     

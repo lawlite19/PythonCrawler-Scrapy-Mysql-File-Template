@@ -68,8 +68,8 @@ ROBOTSTXT_OBEY = True
 #    'webCrawler_scrapy.pipelines.SomePipeline': 300,
 #}
 ITEM_PIPELINES = {
-    'webCrawler_scrapy.pipelines.WebcrawlerScrapyPipeline': 300,
-    'webCrawler_scrapy.pipelines.JsonWithEncodingPipeline': 300,
+    'webCrawler_scrapy.pipelines.WebcrawlerScrapyPipeline': 300,#保存到mysql数据库
+    'webCrawler_scrapy.pipelines.JsonWithEncodingPipeline': 300,#保存到文件中
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -95,9 +95,9 @@ ITEM_PIPELINES = {
 
 #Mysql数据库的配置信息
 MYSQL_HOST = '127.0.0.1'
-MYSQL_DBNAME = 'testdb'  #数据库名字，请修改
+MYSQL_DBNAME = 'testdb'         #数据库名字，请修改
 MYSQL_USER = 'root'             #数据库账号，请修改 
 MYSQL_PASSWD = '123456'         #数据库密码，请修改
 
-MYSQL_PORT = 3306             #数据库端口，在dbhelper中使用
+MYSQL_PORT = 3306               #数据库端口，在dbhelper中使用
 

@@ -92,7 +92,7 @@ class TestDBHelper():
         self.dbHelper.createDatabase() 
     #测试创建表
     def testCreateTable(self):
-        sql="create table testtable(id int primary key auto_increment,name varchar(50),url varchar(100))"
+        sql="create table testtable(id int primary key auto_increment,name varchar(50),url varchar(200))"
         self.dbHelper.createTable(sql)
     #测试插入
     def testInsert(self):
@@ -111,8 +111,8 @@ class TestDBHelper():
     
 if __name__=="__main__":
     testDBHelper=TestDBHelper()
-    #testDBHelper.testCreateDatebase()  #执行测试创建数据库
-    #testDBHelper.testCreateTable()     #执行测试创建表
+    testDBHelper.testCreateDatebase()  #执行测试创建数据库
+    testDBHelper.testCreateTable()     #执行测试创建表
     #testDBHelper.testInsert()          #执行测试插入数据
     #testDBHelper.testUpdate()          #执行测试更新数据
     #testDBHelper.testDelete()          #执行测试删除数据
