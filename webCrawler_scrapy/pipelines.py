@@ -73,4 +73,6 @@ class WebcrawlerScrapyPipeline(object):
     
     #错误处理方法
     def _handle_error(self, failue, item, spider):
+        print '--------------database operation exception!!-----------------'
+        print '-------------------------------------------------------------'
         print failue

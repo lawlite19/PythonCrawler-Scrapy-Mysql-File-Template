@@ -45,7 +45,7 @@ class Spdier_pictures(scrapy.spiders.Spider):
                     
                     urllib.urlretrieve(realUrl,path)  #接收文件路径和需要保存的路径，会自动去文件路径下载并保存到我们指定的本地路径
             
-            '''all_urls=se.xpath("//a/@href").extract()#提取界面所有的url
+            all_urls=se.xpath("//a/@href").extract()#提取界面所有的url
             for url in all_urls:
                 if url.startswith("/fengjing/1920x1080/"):#若是满足定义的条件，继续爬取
-                    yield Request("http://desk.zol.com.cn"+url,callback=self.parse)'''
+                    yield Request("http://desk.zol.com.cn"+url,callback=self.parse)
